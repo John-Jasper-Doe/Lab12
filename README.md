@@ -1,12 +1,12 @@
-# Lab 11
-[![Build Status](https://travis-ci.org/John-Jasper-Doe/Lab11.svg?branch=master)](https://travis-ci.org/John-Jasper-Doe/Lab11)
-[ ![Download](https://api.bintray.com/packages/john-jasper-doe/otus-cpp/homeworks/images/download.svg?version=async) ](https://bintray.com/john-jasper-doe/otus-cpp/homeworks/async/link)
+# Lab 12
+[![Build Status](https://travis-ci.org/John-Jasper-Doe/Lab12.svg?branch=master)](https://travis-ci.org/John-Jasper-Doe/Lab12)
+[ ![Download](https://api.bintray.com/packages/john-jasper-doe/otus-cpp/homeworks/images/download.svg?version=bulk_server) ](https://bintray.com/john-jasper-doe/otus-cpp/homeworks/bulk_server/link)
 
 
 ## Otus Developer C++ Course
-Homework "ASYNC"
+Homework "BULK SERVER"
 
-Manual: https://john-jasper-doe.github.io/Lab11/index.html
+Manual: https://john-jasper-doe.github.io/Lab12/index.html
 
 
 ## About

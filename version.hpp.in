@@ -5,14 +5,14 @@
 
 /* See the license in the file "LICENSE.txt" in the root directory. */
 
-#ifndef ASYNC_VERSION_HPP_
-#define ASYNC_VERSION_HPP_
+#ifndef BLK_SRV_VERSION_HPP_
+#define BLK_SRV_VERSION_HPP_
 
-#define ASYNC_MAJOR @ASYNC_MAJOR@
-#define ASYNC_MINOR @ASYNC_MINOR@
-#define ASYNC_PATCH @ASYNC_PATCH@
+#define BLK_SRV_MAJOR @BLK_SRV_MAJOR@
+#define BLK_SRV_MINOR @BLK_SRV_MINOR@
+#define BLK_SRV_PATCH @BLK_SRV_PATCH@
 
-#define ASYNC_VERSION \
-    (ASYNC_MAJOR * 10000 + ASYNC_MINOR * 100 + ASYNC_PATCH)
+#define BLK_SRV_VERSION \
+    (BLK_SRV_MAJOR * 10000 + BLK_SRV_MINOR * 100 + BLK_SRV_PATCH)
 
-#endif /* ASYNC_VERSION_HPP_ */
+#endif /* BLK_SRV_VERSION_HPP_ */

@@ -14,7 +14,7 @@ script:
 - cmake --build . --target package
 
 env:
-  - TARGET=async
+  - TARGET=bulk_server
 
 deploy:
 - provider: pages
