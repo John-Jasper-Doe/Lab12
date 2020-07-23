@@ -1,0 +1,18 @@
+/**
+ * @file version.hpp
+ * @brief Project version announcement.
+ */
+
+/* See the license in the file "LICENSE.txt" in the root directory. */
+
+#ifndef ASYNC_VERSION_HPP_
+#define ASYNC_VERSION_HPP_
+
+#define ASYNC_MAJOR @ASYNC_MAJOR@
+#define ASYNC_MINOR @ASYNC_MINOR@
+#define ASYNC_PATCH @ASYNC_PATCH@
+
+#define ASYNC_VERSION \
+    (ASYNC_MAJOR * 10000 + ASYNC_MINOR * 100 + ASYNC_PATCH)
+
+#endif /* ASYNC_VERSION_HPP_ */
