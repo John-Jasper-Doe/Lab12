@@ -10,15 +10,19 @@
 #define CLIENT_HPP_
 
 #include <boost/asio.hpp>
+#include <memory>
+
 #include <libasync/async/async.hpp>
 
 namespace bulk_server {
 namespace ba = boost::asio;
 
-class client {
+class client : public std::enable_shared_from_this<client> {
   ba::io_context& context_;
   ba::ip::tcp::socket socket_;
   libasync::async::handle_t handle_;
+  ba::streambuf buffer_;
+  std::atomic<bool> stopped_{true};
 
 public:
   client() = delete;
@@ -31,6 +35,13 @@ public:
 
   client& operator=(const client&) = delete;
   client& operator=(client&&) = delete;
+
+  void start() noexcept;
+  void stop() noexcept;
+
+protected:
+  void do_read() noexcept;
+  void read(const boost::system::error_code& ec, std::size_t sz) noexcept;
 };
 
 } /* bulk_server */
