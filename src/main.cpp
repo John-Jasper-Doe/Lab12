@@ -1,21 +1,66 @@
+#include <boost/program_options.hpp>
 #include <iostream>
-#include <libasync/async/async.hpp>
+#include "server.hpp"
 
-using namespace libasync;
+namespace {
 
-int main(int, char*[]) {
-  std::size_t bulk = 5;
+struct param {
+  unsigned short port{0};
+  std::size_t bulk_size{0};
+};
 
-  auto h = async::connect(bulk);
-  auto h2 = async::connect(bulk);
+using param_t = param;
 
-  async::receive(h, "1", 1);
-  async::receive(h2, "1\n", 2);
-  async::receive(h, "\n2\n3\n4\n5\n6\n{\na\n", 15);
-  async::receive(h, "b\nc\nd\n}\n89\n", 11);
+void get_param(const int argc, const char* const argv[], param_t& param) {
+  namespace po = boost::program_options;
 
-  async::disconnect(h);
-  async::disconnect(h2);
+  // clang-format off
+  po::options_description desc("Options: ");
+  desc.add_options()
+      ("help,h", "this help.")
+      ("port,p", po::value<unsigned short>(), "set server port")
+      ("size,s", po::value<std::size_t>(), "set size of bulk");
+  // clang-format on
 
-  return 0;
+  po::variables_map vm;
+  po::store(po::parse_command_line(argc, argv, desc), vm);
+  po::notify(vm);
+
+  if (vm.count("help") || vm.count("h")) {
+    std::cout << desc << "\n";
+    exit(0);
+  }
+
+  if (vm.count("port"))
+    param.port = vm["port"].as<unsigned short>();
+  else if (vm.count("p"))
+    param.port = vm["p"].as<unsigned short>();
+  else
+    throw std::invalid_argument("Port was not set");
+
+  if (vm.count("size"))
+    param.bulk_size = vm["size"].as<std::size_t>();
+  else if (vm.count("s"))
+    param.bulk_size = vm["s"].as<std::size_t>();
+  else
+    throw std::invalid_argument("Size of bulk was not set.");
+}
+
+} /* :: */
+
+int main(int argc, const char* argv[]) {
+  param_t params;
+
+  try {
+    get_param(argc, argv, params);
+  }
+  catch (const std::invalid_argument& e) {
+    std::cerr << e.what() << std::endl;
+    return EXIT_FAILURE;
+  }
+
+  auto server = std::make_shared<bulk_server::server>(params.port, params.bulk_size);
+  server->start();
+
+  return EXIT_SUCCESS;
 }
