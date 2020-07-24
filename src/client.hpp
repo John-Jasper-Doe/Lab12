@@ -39,6 +39,8 @@ public:
   void start() noexcept;
   void stop() noexcept;
 
+  ba::ip::tcp::socket& socket() noexcept;
+
 protected:
   void do_read() noexcept;
   void read(const boost::system::error_code& ec, std::size_t sz) noexcept;

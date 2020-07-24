@@ -28,6 +28,10 @@ void client::stop() noexcept {
   }
 }
 
+ba::ip::tcp::socket& client::socket() noexcept {
+  return socket_;
+}
+
 void client::do_read() noexcept {
   if (stopped_)
     return;
