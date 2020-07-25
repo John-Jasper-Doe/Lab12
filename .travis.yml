@@ -6,6 +6,7 @@ before_script:
 - sudo apt-get update -q
 - sudo apt install doxygen -y
 - sudo apt install graphviz -y
+- sudo apt install libboost-all-dev -y
 
 script:
 - cmake .
