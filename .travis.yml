@@ -1,12 +1,16 @@
-dist: xenial
+dist: bionic
 
 language: c++
 
-before_script:
-- sudo apt-get update -q
-- sudo apt install doxygen -y
-- sudo apt install graphviz -y
-- sudo apt install libboost-all-dev -y
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-7
+      - libboost-all-dev
+      - doxygen
+      - graphviz
 
 script:
 - cmake .
