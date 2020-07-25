@@ -40,7 +40,7 @@ void client::do_read() noexcept {
 }
 
 void client::read(const boost::system::error_code& ec, std::size_t sz) noexcept {
-  if (ec)
+  if (ec == boost::asio::error::eof || ec == boost::asio::error::connection_reset)
     stop();
   else if (!stopped_) {
     if (sz) {
