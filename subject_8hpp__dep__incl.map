@@ -1,0 +1,12 @@
+<map id="lib/libasync/include/libasync/utils/subject.hpp" name="lib/libasync/include/libasync/utils/subject.hpp">
+<area shape="rect" id="node2" href="$ireader_8hpp.html" title="Discription of the interface class &quot;IReader&quot;. " alt="" coords="378,95,551,136"/>
+<area shape="rect" id="node3" href="$controller_8hpp.html" title="Discription of the class &quot;Controller&quot;. " alt="" coords="150,184,355,225"/>
+<area shape="rect" id="node8" href="$reader_8hpp.html" title="Discription of the class &quot;Reader&quot;. " alt="" coords="380,184,549,225"/>
+<area shape="rect" id="node10" href="$tsreader_8hpp.html" title="Discription of the class &quot;TsReader&quot;. " alt="" coords="574,184,755,225"/>
+<area shape="rect" id="node4" href="$context_8hpp.html" title="Discription of the class &quot;Context&quot;. " alt="" coords="5,273,199,315"/>
+<area shape="rect" id="node7" href="$controller_8cpp.html" title="The implementation of the class &quot;Controller&quot;. " alt="" coords="223,273,373,315"/>
+<area shape="rect" id="node5" href="$async_8cpp.html" title="Async functions for work with library.. " alt="" coords="21,363,183,404"/>
+<area shape="rect" id="node6" href="$context_8cpp.html" title="Implimentation of the class &quot;Context&quot;. " alt="" coords="351,363,501,404"/>
+<area shape="rect" id="node9" href="$reader_8cpp.html" title="Implementation of the class &quot;Reader&quot;. " alt="" coords="397,273,532,315"/>
+<area shape="rect" id="node11" href="$tsreader_8cpp.html" title="Implementation of the class &quot;TsReader&quot;. " alt="" coords="608,273,743,315"/>
+</map>

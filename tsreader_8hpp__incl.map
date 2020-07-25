@@ -1,0 +1,6 @@
+<map id="lib/libasync/include/libasync/io/tsreader.hpp" name="lib/libasync/include/libasync/io/tsreader.hpp">
+<area shape="rect" id="node3" href="$tsqueue_8hpp.html" title="Implementation of the class &quot;TSQueue&quot;. " alt="" coords="96,95,317,121"/>
+<area shape="rect" id="node6" href="$ireader_8hpp.html" title="Discription of the interface class &quot;IReader&quot;. " alt="" coords="342,95,511,121"/>
+<area shape="rect" id="node8" href="$subject_8hpp.html" title="Discription of the template class &quot;Subject&quot;. " alt="" coords="412,169,599,196"/>
+<area shape="rect" id="node12" href="$observer_8hpp.html" title="Discription of the template class &quot;Observer&quot;. " alt="" coords="608,244,715,271"/>
+</map>

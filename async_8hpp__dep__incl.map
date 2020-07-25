@@ -1,0 +1,8 @@
+<map id="lib/libasync/include/libasync/async/async.hpp" name="lib/libasync/include/libasync/async/async.hpp">
+<area shape="rect" id="node2" href="$client_8hpp.html" title="Definition of the class &quot;Client&quot;. " alt="" coords="47,102,157,129"/>
+<area shape="rect" id="node4" href="$server_8hpp.html" title="Definition of the class &quot;Server&quot;. " alt="" coords="137,184,251,211"/>
+<area shape="rect" id="node7" href="$async_8cpp.html" title="Async functions for work with library.. " alt="" coords="232,95,393,136"/>
+<area shape="rect" id="node3" href="$client_8cpp.html" title="Implimentation of the class &quot;Client&quot;. " alt="" coords="5,184,113,211"/>
+<area shape="rect" id="node5" href="$main_8cpp.html" title="src/main.cpp" alt="" coords="76,259,181,285"/>
+<area shape="rect" id="node6" href="$server_8cpp.html" title="Implimentation of the class &quot;Server&quot;. " alt="" coords="205,259,317,285"/>
+</map>

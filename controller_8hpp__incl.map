@@ -1,0 +1,9 @@
+<map id="lib/libasync/include/libasync/core/controller.hpp" name="lib/libasync/include/libasync/core/controller.hpp">
+<area shape="rect" id="node4" href="$cmdpool_8hpp.html" title="Discription of the class &quot;cmd_pool&quot;. " alt="" coords="37,169,262,196"/>
+<area shape="rect" id="node8" href="$counter_8hpp.html" title="Discription of the class &quot;counter&quot;. " alt="" coords="286,169,503,196"/>
+<area shape="rect" id="node9" href="$taskpool_8hpp.html" title="Task pool implementation. " alt="" coords="891,95,1117,121"/>
+<area shape="rect" id="node17" href="$ireader_8hpp.html" title="Discription of the interface class &quot;IReader&quot;. " alt="" coords="290,95,459,121"/>
+<area shape="rect" id="node20" href="$observer_8hpp.html" title="Discription of the template class &quot;Observer&quot;. " alt="" coords="659,244,765,271"/>
+<area shape="rect" id="node15" href="$tsqueue_8hpp.html" title="Implementation of the class &quot;TSQueue&quot;. " alt="" coords="1225,169,1327,196"/>
+<area shape="rect" id="node18" href="$subject_8hpp.html" title="Discription of the template class &quot;Subject&quot;. " alt="" coords="528,169,715,196"/>
+</map>

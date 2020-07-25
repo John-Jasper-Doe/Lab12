@@ -1,0 +1,10 @@
+<map id="lib/libasync/include/libasync/common/tsqueue.hpp" name="lib/libasync/include/libasync/common/tsqueue.hpp">
+<area shape="rect" id="node2" href="$taskpool_8hpp.html" title="Task pool implementation. " alt="" coords="13,95,242,136"/>
+<area shape="rect" id="node4" href="$context_8hpp.html" title="Discription of the class &quot;Context&quot;. " alt="" coords="180,273,373,315"/>
+<area shape="rect" id="node8" href="$tsreader_8hpp.html" title="Discription of the class &quot;TsReader&quot;. " alt="" coords="321,95,502,136"/>
+<area shape="rect" id="node3" href="$controller_8hpp.html" title="Discription of the class &quot;Controller&quot;. " alt="" coords="25,184,230,225"/>
+<area shape="rect" id="node7" href="$controller_8cpp.html" title="The implementation of the class &quot;Controller&quot;. " alt="" coords="5,273,156,315"/>
+<area shape="rect" id="node5" href="$async_8cpp.html" title="Async functions for work with library.. " alt="" coords="151,363,312,404"/>
+<area shape="rect" id="node6" href="$context_8cpp.html" title="Implimentation of the class &quot;Context&quot;. " alt="" coords="336,363,487,404"/>
+<area shape="rect" id="node9" href="$tsreader_8cpp.html" title="Implementation of the class &quot;TsReader&quot;. " alt="" coords="449,184,584,225"/>
+</map>

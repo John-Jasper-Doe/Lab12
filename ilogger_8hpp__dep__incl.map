@@ -1,0 +1,7 @@
+<map id="lib/libasync/include/libasync/io/ilogger.hpp" name="lib/libasync/include/libasync/io/ilogger.hpp">
+<area shape="rect" id="node2" href="$conlogger_8hpp.html" title="Discription of the &quot;Console Logger&quot; class. " alt="" coords="37,95,228,136"/>
+<area shape="rect" id="node5" href="$filelogger_8hpp.html" title="Discription of the &quot;File Logger&quot; class. " alt="" coords="252,95,440,136"/>
+<area shape="rect" id="node3" href="$controller_8cpp.html" title="The implementation of the class &quot;Controller&quot;. " alt="" coords="164,184,315,225"/>
+<area shape="rect" id="node4" href="$conlogger_8cpp.html" title="Implementation of the &quot;Console Logger&quot; class. " alt="" coords="5,184,140,225"/>
+<area shape="rect" id="node6" href="$filelogger_8cpp.html" title="Implementation of the &quot;File Logger&quot; class. " alt="" coords="339,184,473,225"/>
+</map>

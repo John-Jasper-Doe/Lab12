@@ -1,0 +1,8 @@
+<map id="libasync::common::taskpool&lt; THREADS &gt;" name="libasync::common::taskpool&lt; THREADS &gt;">
+<area shape="rect" id="node2" href="$classlibasync_1_1common_1_1tsqueue.html" title="libasync::common::tsqueue\l\&lt; task_t * \&gt;" alt="" coords="844,55,1045,96"/>
+<area shape="rect" id="node4" href="$structlibasync_1_1common_1_1detail_1_1node.html" title="libasync::common::detail\l::node\&lt; task_t *\&gt;" alt="" coords="275,5,461,47"/>
+<area shape="rect" id="node6" href="$structlibasync_1_1common_1_1detail_1_1node.html" title="Representation of a queue node. " alt="" coords="275,83,461,124"/>
+<area shape="rect" id="node7" title="STL class. " alt="" coords="901,135,988,162"/>
+<area shape="rect" id="node8" title="STL class. " alt="" coords="562,128,701,169"/>
+<area shape="rect" id="node10" href="$classlibasync_1_1common_1_1counter.html" title="The &quot;counter&quot; class. " alt="" coords="532,194,731,221"/>
+</map>
