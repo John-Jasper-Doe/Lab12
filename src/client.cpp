@@ -20,9 +20,7 @@ void client::start() noexcept {
 }
 
 void client::stop() noexcept {
-  if (stopped_)
-    return;
-  else {
+  if (!stopped_) {
     stopped_ = true;
     socket_.close();
   }
@@ -33,9 +31,7 @@ ba::ip::tcp::socket& client::socket() noexcept {
 }
 
 void client::do_read() noexcept {
-  if (stopped_)
-    return;
-  else {
+  if (!stopped_) {
     ba::async_read_until(
         socket_, buffer_, '\n',
         boost::bind(&client::read, shared_from_this(), boost::asio::placeholders::error,
@@ -46,10 +42,8 @@ void client::do_read() noexcept {
 void client::read(const boost::system::error_code& ec, std::size_t sz) noexcept {
   if (ec == boost::asio::error::eof || ec == boost::asio::error::connection_reset)
     stop();
-  else if (stopped_)
-    return;
-  else {
-    if (sz != 0) {
+  else if (!stopped_) {
+    if (sz) {
       std::istream out_strm(&buffer_);
       std::string command;
       getline(out_strm, command);

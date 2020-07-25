@@ -39,7 +39,7 @@ project(
   LANGUAGES CXX
 )
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 set(LIBRARY_INCLUDE_PATH ${CMAKE_SOURCE_DIR}/lib/libasync/include)
 include_directories(${LIBRARY_INCLUDE_PATH})
 
@@ -78,13 +78,14 @@ endif()
 add_subdirectory(lib)
 add_subdirectory(src)
 
-configure_file(async.pc.in ${CMAKE_CURRENT_BINARY_DIR}/async.pc @ONLY)
-install(FILES ${CMAKE_BINARY_DIR}/async.pc DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/pkgconfig)
-
 # generate .deb package
 set(CPACK_GENERATOR DEB)
 set(CPACK_PACKAGE_CONTACT john.jasper.doe@gmail.com)
 set(CPACK_DEBIAN_PACKAGE_SHLIBDEPS ON)
+
+set(CPACK_PACKAGE_VERSION_MAJOR "${BLK_SRV_MAJOR}")
+set(CPACK_PACKAGE_VERSION_MINOR "${BLK_SRV_MINOR}")
+set(CPACK_PACKAGE_VERSION_PATCH "${BLK_SRV_PATCH}")
 
 # include will generate proper code for .deb generation
 include(CPack)
