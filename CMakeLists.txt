@@ -43,7 +43,7 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 set(LIBRARY_INCLUDE_PATH ${CMAKE_SOURCE_DIR}/lib/libasync/include)
 include_directories(${LIBRARY_INCLUDE_PATH})
 
-find_package(Boost 1.71 COMPONENTS program_options REQUIRED)
+find_package(Boost COMPONENTS program_options REQUIRED)
 
 # Setting options on project
 option(CLANG_FORMAT "Enable clang-format target" OFF)
