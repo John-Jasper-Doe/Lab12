@@ -40,7 +40,7 @@ handle_t connect(std::size_t bulk) noexcept {
 
     return reinterpret_cast<handle_t>(raw_ptr);
   }
-  catch (std::bad_alloc&) {
+  catch (...) {
     return nullptr;
   }
 }
