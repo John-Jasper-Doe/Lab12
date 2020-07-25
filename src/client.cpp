@@ -11,7 +11,7 @@
 
 namespace bulk_server {
 
-client::client(boost::asio::io_context& context, libasync::async::handle_t handle) noexcept
+client::client(ba::io_service& context, libasync::async::handle_t handle) noexcept
   : context_(context), socket_(context_), handle_(handle) {}
 
 void client::start() noexcept {

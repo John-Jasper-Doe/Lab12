@@ -17,7 +17,7 @@ namespace bulk_server {
 namespace ba = boost::asio;
 
 class server : public std::enable_shared_from_this<server> {
-  ba::io_context context_{};
+  ba::io_service context_{};
   ba::ip::tcp::endpoint ep_;
   ba::ip::tcp::acceptor acceptor_;
   libasync::async::handle_t handle_;

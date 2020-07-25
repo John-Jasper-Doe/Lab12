@@ -18,7 +18,7 @@ namespace bulk_server {
 namespace ba = boost::asio;
 
 class client : public std::enable_shared_from_this<client> {
-  ba::io_context& context_;
+  ba::io_service& context_;
   ba::ip::tcp::socket socket_;
   libasync::async::handle_t handle_;
   ba::streambuf buffer_;
@@ -26,7 +26,7 @@ class client : public std::enable_shared_from_this<client> {
 
 public:
   client() = delete;
-  explicit client(ba::io_context& context, libasync::async::handle_t handle) noexcept;
+  explicit client(ba::io_service& context, libasync::async::handle_t handle) noexcept;
 
   ~client() = default;
 
